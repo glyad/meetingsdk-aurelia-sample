@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceRoot}",
+      "userDataDir": "${workspaceRoot}/.chrome",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///./~/*": "../${webRoot}/node_modules/*",  
+        "webpack:///./*": "${webRoot}/src/*",        
+        "webpack:///../*": "${webRoot}/src/*",         
+        "webpack:///*": "*",
+        "webpack://${workspaceFolderBasename}/*": "${webRoot}/*"
+      }
+    }
+  ]
+}
