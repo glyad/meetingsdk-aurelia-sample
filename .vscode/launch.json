@@ -2,10 +2,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Chrome",
+      "name": "NGROCK",
       "type": "chrome",
       "request": "launch",
-      "url": "http://localhost:8080",
+      "url": "https://65e2-2a00-a040-19b-11bd-c13-fe81-4d62-f101.eu.ngrok.io",
       "webRoot": "${workspaceRoot}",
       "userDataDir": "${workspaceRoot}/.chrome",
       "sourceMaps": true,
